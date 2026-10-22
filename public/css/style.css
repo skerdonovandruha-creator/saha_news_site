@@ -1,0 +1,67 @@
+/* Немного своих стилей поверх Bootstrap */
+
+body {
+    background: #f4f6f8;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+}
+
+/* Шапка: тёмно-зелёный градиент */
+.site-nav {
+    background: linear-gradient(90deg, #14452f, #1b7f4d);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .15);
+}
+
+.site-nav .navbar-brand {
+    letter-spacing: .5px;
+}
+
+/* Подвал */
+.site-footer {
+    background: #14452f;
+    color: #cfe8d9;
+    font-size: .9rem;
+}
+
+/* Заголовок страницы */
+.page-head {
+    font-size: 1.6rem;
+    color: #14452f;
+    border-bottom: 2px solid #1b7f4d;
+    padding-bottom: .4rem;
+    margin-bottom: 1.25rem;
+}
+
+/* Карточки статей */
+.news-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .08);
+}
+
+.news-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+    background: #eef3f0;
+    font-size: .85rem;
+    color: #4a5a52;
+}
+
+/* Блок редактирования в админке */
+details summary {
+    cursor: pointer;
+    color: #1b7f4d;
+}
+
+/* Активная страница в пагинации */
+.pagination .page-item.active .page-link {
+    background: #1b7f4d;
+    border-color: #1b7f4d;
+}
